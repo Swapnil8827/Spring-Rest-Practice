@@ -38,7 +38,7 @@ public class DemoController {
     public String deleteCustomer(@PathVariable Integer id)
     {
         customerRepository.deleteById(id);
-        return "Customer Deleted!!";
+        return "Customer " + customerRepository.findCustomerById(id).getFirstName() + "Deleted!!";
     }
 
 }
