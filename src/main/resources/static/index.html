@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>You first Spring application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p><a href="/hello">Greet the world!</a></p>
+
+<form action="/hello" method="GET" id="nameForm">
+    <div>
+        <label for="nameField">How should the app call you?</label>
+        <input name="myName" id="nameField">
+    </div>    <div>
+        <label for="emailField">What Is your email?</label>
+        <input name="myEmail" id="emailField">
+    </div>
+    <button>Greet me!</button>
+
+</form>
+<br>
+<hr>
+
+<form action="/add" method="POSt">
+    <div>
+        <label for="idField">ID</label>
+        <input name="id" id="idField">
+    </div>
+    <div>
+        <label for="fnField">First</label>
+        <input name="first" id="fnField">
+    </div>
+    <div>
+        <label for="lnField">Last</label>
+        <input name="last" id="lnField">
+    </div>
+    <button>Enter</button>
+</form>
+
+<br>
+<hr>
+
+<p><a href="/list">Show All Customers</a></p>
+
+
+</body>
+</html>
