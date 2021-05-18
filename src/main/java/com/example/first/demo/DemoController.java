@@ -35,9 +35,10 @@ public class DemoController {
     }
 
     @GetMapping("/delete/{id}")
-    public void deleteCustomer(@PathVariable Integer id)
+    public String deleteCustomer(@PathVariable Integer id)
     {
         customerRepository.deleteById(id);
+        return "Customer Deleted!!";
     }
 
 }
